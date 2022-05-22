@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 1s ease-in-out;
+  outline: none;
+  font-family: "Acme", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  background: #000;
+  color: #fff;
+}
+
+textarea {
+    resize: none;
+    padding: 5px;
+}
+
+nav {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main_div {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#main {
+  width: 500px;
+  height: 300px;
+  border: 5px double #ffffff;
+  border-radius: 10px;
+}
+
+#input {
+  height: 50%;
+  border-bottom: 1px solid rgb(252, 252, 252);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}   
+
+#msg_input {
+  width: 80%;
+  height: 55%;
+}
+
+#output {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#encrypted_msg {
+  width: 80%;
+  height: 55%;
+}
+
+.btn {
+  width: 80%;
+  height: 25px;
+  cursor: pointer;
+}
+
+#encrypt_msg {
+    background: rgb(22, 39, 200);
+    color: #fff;
+}
+
+#copy {
+    background: #016101;
+    color: #fff;
+}

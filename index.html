@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylsheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Message encryption</title>
   </head>
   <body>
@@ -11,17 +11,24 @@
     </nav>
 
     <div id="main_div">
-      <div id="input">
-        <input
-          type="text"
-          id="msg_input"
-          placeholder="Message you want to encrypt..."
-          autofocus="true"
-        />
-        <button id="trigger">Encrypt</button>
-      </div>
-      <div id="output">
-        <textarea id="text" placeholder="Encrypted msg" ></textarea>
+      <div id="main">
+        <div id="input">
+          <textarea
+            type="text"
+            id="msg_input"
+            placeholder="Message you want to encrypt..."
+            autofocus="true"
+          ></textarea>
+          <button id="encrypt_msg" class="btn">Encrypt</button>
+        </div>
+        <div id="output">
+          <textarea
+            id="encrypted_msg"
+            placeholder="Encrypted Message"
+            readonly
+          ></textarea>
+          <button id="copy" class="btn">Copy Encrypted Message</button>
+        </div>
       </div>
     </div>
   </body>
