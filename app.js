@@ -38,7 +38,7 @@ encryptBtn.addEventListener("click", (e) => {
       encrypt(msgInput.value);
     }, 2000);
   } else {
-    console.log("Write some shit in it...");
+    encryptedMsgOutput.value = "Write Simething....";
   }
 });
 
