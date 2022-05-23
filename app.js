@@ -15,6 +15,7 @@ let abc = "abcdefghijklmnopqrstuvwxyz";
 
 // functions
 let encrypt = (inp) => {
+  encryptedMsgOutput.value = "";
   letters = abc.split("");
   msg = inp.split("");
   for (let i = 0; i < letters.length; i++) {
@@ -32,8 +33,10 @@ let encrypt = (inp) => {
 // event listeners
 encryptBtn.addEventListener("click", (e) => {
   if (msgInput.value != "") {
-    console.log("Encryting....");
-    encrypt(msgInput.value);
+    encryptedMsgOutput.value = "Encryting....";
+    setTimeout(() => {
+      encrypt(msgInput.value);
+    }, 2000);
   } else {
     console.log("Write some shit in it...");
   }
